@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/pmp/Tools_Techniques/Tools_Techniques",
     "pages/contact/contact",
     "pages/pmp/list_pmp/list_pmp",
     "pages/pmp/page_pmp/page_pmp",

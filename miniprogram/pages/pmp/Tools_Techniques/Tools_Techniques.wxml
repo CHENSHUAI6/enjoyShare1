@@ -1,0 +1,68 @@
+<!--pages/pmp/Tools_Techniques/Tools_Techniques.wxml-->
+<view class="container">
+  <!-- <text class="contact-title">内容展示</text> -->
+  <button type="warn" size="mini" bindtap="onQuery">搜索</button>
+  <view class="contact-list" wx:for="{{contactList}}" wx:key="{{index}}">
+    <view class="head-items">
+      <text class="series">{{item.name}}</text>
+      <text class="contact-type">{{item.position}}</text>
+    </view>
+    <view class="contact-items">
+      <image src="../../../images/qq_2.png" mode="scollFill center" class="contact-icon"></image>
+      <text bindtap="copyText" data-id="{{item.qq}}" class="font-type">{{item.qq}}</text>
+    </view>
+    <view class="{{item.showType}}">
+      <image src="../../../images/email_2.png" mode="scollFill center" class="contact-icon"></image>
+      <text bindtap="copyText" data-id="{{item.email}}" class="font-type">{{item.email}}</text>
+    </view>
+    <view class="contact-items">
+    <image src="../../../images/wechat_2.png" mode="scollFill center" class="contact-icon"></image>
+      <text bindtap="copyText" data-id="{{item.wechatName}}" class="font-type">{{item.wechatName}}</text>
+    </view>
+  </view>
+
+  <!-- <view class="contact-list">
+    <view class="head-items">
+      <text class="series">Demi</text>
+      <text class="contact-type">MM 顾问</text>
+    </view>
+    <view class="contact-items">
+     <image src="../../images/qq_2.png" mode="scollFill center" class="contact-icon"></image>
+      <text class="font-type">1404318263</text>
+    </view>
+    <view class="contact-items">
+     <image src="../../images/email_2.png" mode="scollFill center" class="contact-icon"></image>
+      <text class="font-type">1404318263@qq.com</text>
+    </view>
+    <view class="contact-items">
+     <image src="../../images/wechat_2.png" mode="scollFill center" class="contact-icon"></image>
+      <text class="font-type">dizhangmen</text>
+    </view>
+  </view> -->
+
+  <!-- <view class="contact-list">
+    <view class="head-items">
+      <text class="series">Hilary Chen</text>
+      <text class="contact-type">ABAP开发</text>
+    </view>
+    <view class="contact-items">
+      <text class="font-type"> QQ：178057198</text>
+    </view>
+    <view class="contact-items">
+      <text class="font-type"> QQ：178057198</text>
+    </view>
+    <view class="contact-items">
+      <view class="font-type">
+        <text class="channel">中规</text>
+        <text>out_color//in_color</text>
+      </view>
+      <view class="font-type-1">
+        <text>剩:surplus_time</text>
+      </view>
+    </view>
+    <view class="contact-items">
+      <text class="earnest-money">己冻结诚意金earnest_money元</text>
+    </view>
+  </view> -->
+
+</view>
